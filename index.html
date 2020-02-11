@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>React App</title>
+    <link rel="stylesheet" href="./src/todos.css" />
+  </head>
+  <body>
+    <div id="root" style="display: none;"></div>
+    <h1 class="todo-title">TODO LIST</h1>
+
+    <main id="main">
+      <div class="todo-form">
+        <div>
+          <label for="">Filter</label>
+          <select id="dropdown"> </select>
+        </div>
+        <div id="addTodoForm">
+          <input class="text-add" type="text" placeholder="Add a new task" />
+          <button class="btn btn-info btn-add">add</button>
+        </div>
+      </div>
+
+      <div class="todo-list-container">
+        <section id="todoList"></section>
+      </div>
+
+      <div class="todoActions">
+        <p><span class="todo-count">3</span> items</p>
+        <div>
+          <button class="btn btn-info all-task">All</button>
+          <button class="btn btn-show-active">Active</button>
+          <button class="btn btn-show-complete">complete</button>
+        </div>
+        <button class="btn btn-clear">Clear</button>
+      </div>
+    </main>
+    ​
+    <script src="src/todo.js"></script>
+  </body>
+</html>

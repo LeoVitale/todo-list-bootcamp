@@ -27,17 +27,33 @@
     <title>React App</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <div id="root" style="display: none;"></div>
+    <h1 class="todo-title">TODO LIST</h1>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <main id="main">
+      <div class="todo-form">
+        <div>
+          <label for="">Filter</label>
+          <select id="dropdown"> </select>
+        </div>
+        <div id="addTodoForm">
+          <input class="text-add" type="text" placeholder="Add a new task" />
+          <button class="btn btn-info btn-add">add</button>
+        </div>
+      </div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+      <div id="todoList"></div>
+
+      <div class="todoActions">
+        <p><span class="todo-count">3</span> items</p>
+        <div>
+          <button class="btn btn-info all-task">All</button>
+          <button class="btn btn-show-active">Active</button>
+          <button class="btn btn-show-complete">complete</button>
+        </div>
+        <button class="btn btn-clear">Clear</button>
+      </div>
+    </main>
+    ​
   </body>
 </html>
