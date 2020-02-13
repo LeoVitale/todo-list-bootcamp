@@ -62,6 +62,10 @@ li {
   justify-content: space-between;
 }
 
+.invisible {
+  display: none;
+}
+
 .finished {
   text-decoration: line-through;
   background-color: #00968840;
